@@ -1,0 +1,61 @@
+/* .card{
+  padding:0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+ 
+}
+mat-card.project-card{
+    width: 350px;
+    padding: 18px 0px 0px 0px;
+    margin-left: 10px;
+
+    margin-bottom: 10px;
+    height: 208px;
+
+}
+
+mat-card.project-card .actions{
+  text-align: right;
+  position: relative;
+  padding-right: 5px;
+}
+
+mat-card.project-card .thumb-divider{
+    position: relative;
+}
+
+mat-card.project-card .thumb-divider mat-divider{
+  position: relative;
+}
+
+mat-card.project-card .actions .thumb{
+  position: absolute;
+  border-radius: 50%;
+  background: blue;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  top: 6px;
+  left: 20px;
+}
+.content{
+  margin-top: 13px;
+  margin-bottom: 0px
+}
+
+
+.icon{
+padding-right: 30px;
+}
+.align{
+padding: 20px;
+width:350px;
+height: 156px;;
+
+} */

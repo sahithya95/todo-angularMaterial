@@ -1,0 +1,19 @@
+<div class="align">
+  <mat-card style="width: 50%">
+  
+  <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="Name" [(ngModel)]="data.Sname">
+      </mat-form-field>
+    
+      <mat-form-field>
+        <textarea matInput placeholder="Description" rows="5" [(ngModel)]="data.Desc"></textarea>
+      </mat-form-field>
+      </div>
+      <div class="butn">
+      <button mat-raised-button style="width: 30%" color="primary"(click)="store.editSprint(data.pid,data.Id,data)" routerLink="/sprint">Save</button>
+      <button mat-raised-button style="width: 30%" color="primary" routerLink="/sprint">Cancel</button>
+  
+        </div>
+  </mat-card>
+  </div>

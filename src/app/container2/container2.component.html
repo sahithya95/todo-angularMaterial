@@ -1,0 +1,8 @@
+<app-inprogress
+*ngFor="let task of tasks"
+[task]="task"
+type="todo"
+(donetask)="done($event)"
+(pausetask)="pause($event)"
+[ngClass]="{hidecell:task.status!='inprogress'}"
+></app-inprogress>

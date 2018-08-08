@@ -1,0 +1,9 @@
+<app-done
+*ngFor="let task of tasks"
+[task]="task"
+type="todo"
+
+[ngClass]="{hidecell:task.status!='completed'}"
+
+>
+</app-done>

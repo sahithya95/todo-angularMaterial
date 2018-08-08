@@ -1,0 +1,7 @@
+<app-backlog
+*ngFor="let task of tasks"
+[task]="task"
+type="todo"
+(resumetask)="resumetask($event)"
+[ngClass]="{hidecell:task.status!='backlogs'}">
+</app-backlog>

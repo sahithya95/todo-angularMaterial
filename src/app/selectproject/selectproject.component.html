@@ -1,0 +1,54 @@
+<div class="background">
+    <div class="container">
+
+        <h3>Dashboard</h3>
+        <mat-card class="crd">
+            <div class="header">
+                <div>Sprint:
+                    <mat-form-field>
+                        <mat-select  (selectionChange)="someMethod($event.value)" >
+                            <mat-option *ngFor="let data of sprint"  [value]="data.Id">
+                                {{data.Sname}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    
+                </div>
+                <div style="display: flex;">
+                    <div class="button-row">
+                        <button mat-raised-button color="primary">Add Sprint</button>
+                    </div>
+                    <div>
+                        <mat-icon style="margin-top: 5px;margin-right: 20px;" class="icon">edit</mat-icon>
+                        <mat-icon class="icon">delete</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+    <div class="container">
+        <br>
+        <mat-grid-list cols="4" rowHeight="35">
+            <mat-grid-tile>
+                <h3>Todo</h3>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h3>Inprogress</h3>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h3>Done</h3>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <h3>Backlog</h3>
+            </mat-grid-tile>
+
+        </mat-grid-list>
+        <hr style="border-top: 2px solid #bdb2b2c7;">
+        <div class="contain">
+            <app-container [tasks]="tasks"></app-container>
+             <app-container2 [tasks]="tasks"></app-container2>
+            <app-done-container [tasks]="tasks"></app-done-container> 
+             <app-backlog-container [tasks]="tasks"></app-backlog-container> 
+        </div>
+    </div>
+</div>

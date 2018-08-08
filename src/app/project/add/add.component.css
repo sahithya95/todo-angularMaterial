@@ -1,0 +1,21 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+.align{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top:200px;
+}
+.butn{
+  display: flex;
+  justify-content: space-evenly;
+}
+  

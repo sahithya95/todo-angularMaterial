@@ -1,0 +1,69 @@
+<h3 style="margin-left: 25px">Projects</h3>
+
+<!-- <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="start" fxLayoutGap="10px" fxLayoutGap.xs="0"> -->
+  <div class="card">
+    <mat-card class="project-card" *ngFor="let data of projects;let i=index;">
+      <div class="format">
+        <div class="actions">
+          <mat-icon class="icon" (click)="store.deleteProject(data.pid)">delete</mat-icon>
+          <div class="thumb">
+            <span>{{data.Pname |uppercase|slice :0:2}}</span>
+          </div>
+          <mat-icon class="icon" (click)="edit(data)">edit</mat-icon>
+        </div>
+        <div class="thumb-divider">
+          <mat-divider></mat-divider>
+        </div>
+        <div class="align">
+          <mat-card-title style="margin-top:23px">
+            <h3 routerLink="/selectproject" >{{data.Pname | uppercase}}</h3>
+          </mat-card-title>
+          <mat-card-subtitle>{{data.Desc | slice:0:125}}
+            <span ng-if="data.Desc.length > 125">&hellip;</span>
+          </mat-card-subtitle>
+          <div class="thumb-divider">
+          </div>
+
+          <mat-card-content class="content">
+            <div style="display: flex;justify-content: space-between">
+              <div class="sprint">
+                <p class="heading" (click)="sprint(data.pid)" routerLink="/selectproject">SPRINTS</p>
+                <p class="value">{{data.Sprint.length}}</p>
+              </div>
+              <div class="task">
+                <p class="heading">TASKS</p>
+                <p class="value">4</p>
+              </div>
+            </div>
+            <!-- <table style="width:211px;">
+              <thead>
+                <th>
+                  <div class="sprint">
+                    <p (click)="sprint(data.pid)" routerLink="/sprint">Sprint</p>
+
+                  </div>
+                </th>
+                <th>
+                  <div class="task">
+                    <p>Task</p>
+
+                  </div>
+                </th>
+              </thead>
+              <tr>
+                <td>{{data.Sprint.length}}</td>
+                <td>{{data.tasklength}}</td>
+              </tr>
+            </table> -->
+          </mat-card-content>
+        </div>
+      </div>
+
+    </mat-card>
+    <mat-card style="margin-left: 10px;width: 350px;padding: 0px;height: 277px;">
+        <button mat-raised-button style="padding: 0px;width: 350px;height:277px" routerLink="/add"><h3>Add(+)</h3></button>
+      </mat-card>
+  
+
+  <!-- </div> -->
+</div>

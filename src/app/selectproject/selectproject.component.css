@@ -1,0 +1,34 @@
+.button-row button,
+.button-row a {
+  /* margin-right: 8px; */
+  margin-right: 105px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contain{
+  display: flex;
+  justify-content: space-between;
+}
+/* .background{
+  background-color: #e3e4e5;
+
+} */
+.crd{
+  background-color: #e3e4e5;
+  display: contents;
+}
+app-container{
+  width:270px;
+}
+app-container2{
+  width:270px;
+}
+app-done-container{
+  width:270px;
+}
+app-backlog-container{
+  width:270px;
+}

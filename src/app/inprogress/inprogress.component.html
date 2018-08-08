@@ -1,0 +1,34 @@
+<div class="align">
+ 
+  <mat-card class="card"> 
+    <mat-expansion-panel class="expan">
+      <mat-expansion-panel-header style="padding: 0px">
+        <mat-panel-title >
+          <h4>{{task.Name}}</h4>
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+      <p class="para">
+        {{task.Desc}}
+      </p>
+    </mat-expansion-panel>
+    <div>
+      <mat-card-content>
+        <div class="header">
+          <div class="estimate">
+            {{task.Estimatedtime}}
+          </div>
+          
+        </div>
+        <div class="button-row btm">
+          <!-- <button mat-raised-button color="primary"> -->
+            <mat-icon class="icon" (click)="pause(task)">pause_circle_filled</mat-icon>
+            <mat-icon class="icon" (click)="done(task)">check</mat-icon>
+            <!-- start
+          </button> -->
+        </div>
+      </mat-card-content>
+    </div>
+  </mat-card>
+</div> 
+
